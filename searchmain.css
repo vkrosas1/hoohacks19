@@ -1,0 +1,32 @@
+body {
+ background-image: url("https://mymodernmet.com/wp/wp-content/uploads/archive/J-WwyVe7B6zjhdFJ00MR_1082106464.jpeg");
+ font-family: 'Anton', sans-serif;
+
+ background-repeat: no-repeat;
+ background-size:cover;
+ 
+}
+
+.title {
+	font-size: 50px;
+
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px){
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .responsive {
+    width: 100%;
+  }
+}
