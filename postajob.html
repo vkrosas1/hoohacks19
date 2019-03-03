@@ -1,205 +1,199 @@
-<link rel="stylesheet" href="postajobmain.css">
-
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="style.css">
+  <head>
+    <link rel="stylesheet" href="postajobmain.css" />
+    <link rel="stylesheet" href="style.css" />
+    <title> </title>
+  </head>
 
+  <body>
+    <br />
+    <br />
+    <br />
+    <div class="title">Post a Job</div>
 
-</head>
+    <form
+      action="//submit.form"
+      id="EmployerApplication100"
+      method="post"
+      onsubmit="return ValidateForm(this);"
+    >
+      <script type="text/javascript">
+        function ValidateForm(frm) {
+          if (frm.First_Name.value == "") {
+            alert("Job position name is required.");
+            frm.First_Name.focus();
+            return false;
+          }
+          if (frm.Last_Name.value == "") {
+            alert("Post Until is required.");
+            frm.Last_Name.focus();
+            return false;
+          }
+          if (frm.Email_Address.value == "") {
+            alert("Email address is required.");
+            frm.Email_Address.focus();
+            return false;
+          }
+          if (
+            frm.Email_Address.value.indexOf("@") < 1 ||
+            frm.Email_Address.value.indexOf(".") < 1
+          ) {
+            alert("Please enter a valid email address.");
+            frm.Email_Address.focus();
+            return false;
+          }
 
+          if (frm.Position.value == "") {
+            alert("Position is required.");
+            frm.Position.focus();
+            return false;
+          }
+          if (frm.Phone.value == "") {
+            alert("Phone is required.");
+            frm.Phone.focus();
+            return false;
+          }
+          return true;
+        }
+      </script>
+      <table border="0" cellpadding="5" cellspacing="0">
+        <tr>
+          <td style="width: 50%">
+            <label for="Job_Position"><b>Job Position *</b></label
+            ><br />
+            <input
+              name="Job_Position"
+              type="text"
+              maxlength="500"
+              style="width: 260px"
+            />
+          </td>
+          <td style="width: 50%">
+            <label for="Post_Until"><b>Post Until *</b></label
+            ><br />
+            <input
+              name="Post_Until"
+              type="text"
+              maxlength="50"
+              style="width: 260px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="Company_Email_Address"><b>Company Email *</b></label
+            ><br />
+            <input
+              name="Company_Email_Address"
+              type="text"
+              maxlength="100"
+              style="width: 535px"
+            />
+          </td>
+        </tr>
 
-<body>
-	
-	<br>
-	<br>
-	<br>
-<div class = "title" > Post a Job </div>
+        <tr>
+          <td colspan="2">
+            <label for="Company_Website"><b>Company Website</b></label
+            ><br />
+            <input
+              name="Company Website"
+              type="text"
+              maxlength="255"
+              value="http://"
+              style="width: 535px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="Requirements"
+              ><b>Requirements you're looking for *</b></label
+            ><br />
+            <input
+              name="Requirements"
+              type="text"
+              maxlength="1000"
+              style="width: 535px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Salary"><b>Salary</b></label
+            ><br />
+            <input
+              name="Salary"
+              type="text"
+              maxlength="50"
+              style="width: 260px"
+            />
+          </td>
+          <td>
+            <label for="StartDate"><b> Preferred Start Date?</b></label
+            ><br />
+            <input
+              name="StartDate"
+              type="text"
+              maxlength="50"
+              style="width: 260px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="Phone"><b>Phone *</b></label
+            ><br />
+            <input
+              name="Phone"
+              type="text"
+              maxlength="50"
+              style="width: 260px"
+            />
+          </td>
+          <td>
+            <label for="Fax"><b>Fax</b></label
+            ><br />
+            <input name="Fax" type="text" maxlength="50" style="width: 260px" />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="Relocate"><b>Is relocation necessary?</b></label
+            ><br />
+            <input name="Relocate" type="radio" value="Yes" checked="checked" />
+            Yes <input name="Relocate" type="radio" value="No" /> No
+            <input name="Relocate" type="radio" value="NotSure" /> Not sure
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="Organization"><b>Eligiblity Score </b></label><br />
+            <input
+              name="Organization"
+              type="text"
+              maxlength="100"
+              style="width: 535px"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <label for="Reference"><b>Other Notes</b></label
+            ><br />
+            <textarea
+              name="Reference"
+              rows="7"
+              cols="40"
+              style="width: 535px"
+            ></textarea>
+          </td>
+        </tr>
 
-<form
-action="//submit.form"
-id="EmployerApplication100"
-method="post"
-onsubmit="return ValidateForm(this);"
->
-<script type="text/javascript">
-function ValidateForm(frm) {
-if (frm.First_Name.value == "") {
-alert("Job position name is required.");
-frm.First_Name.focus();
-return false;
-}
-if (frm.Last_Name.value == "") {
-alert("Post Until is required.");
-frm.Last_Name.focus();
-return false;
-}
-if (frm.Email_Address.value == "") {
-alert("Email address is required.");
-frm.Email_Address.focus();
-return false;
-}
-if (
-frm.Email_Address.value.indexOf("@") < 1 ||
-frm.Email_Address.value.indexOf(".") < 1
-) {
-alert("Please enter a valid email address.");
-frm.Email_Address.focus();
-return false;
-}
-
-if (frm.Position.value == "") {
-alert("Position is required.");
-frm.Position.focus();
-return false;
-}
-if (frm.Phone.value == "") {
-alert("Phone is required.");
-frm.Phone.focus();
-return false;
-}
-return true;
-}
-</script>
-<table border="0" cellpadding="5" cellspacing="0">
-<tr>
-<td style="width: 50%">
-<label for="Job_Position"><b>Job Position *</b></label
-><br />
-<input
-name="Job_Position"
-type="text"
-maxlength="500"
-style="width: 260px"
-/>
-</td>
-<td style="width: 50%">
-<label for="Post_Until"><b>Post Until *</b></label
-><br />
-<input
-name="Post_Until"
-type="text"
-maxlength="50"
-style="width: 260px"
-/>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<label for="Company_Email_Address"><b>Company Email *</b></label
-><br />
-<input
-name="Company_Email_Address"
-type="text"
-maxlength="100"
-style="width: 535px"
-/>
-</td>
-</tr>
-
-<tr>
-<td colspan="2">
-<label for="Company_Website"><b>Company Website</b></label
-><br />
-<input
-name="Company Website"
-type="text"
-maxlength="255"
-value="http://"
-style="width: 535px"
-/>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<label for="Requirements"><b>Requirements you're looking for *</b></label
-><br />
-<input
-name="Requirements"
-type="text"
-maxlength="1000"
-style="width: 535px"
-/>
-</td>
-</tr>
-<tr>
-<td>
-<label for="Salary"><b>Salary</b></label
-><br />
-<input
-name="Salary"
-type="text"
-maxlength="50"
-style="width: 260px"
-/>
-</td>
-<td>
-<label for="StartDate"><b> Preferred Start Date?</b></label
-><br />
-<input
-name="StartDate"
-type="text"
-maxlength="50"
-style="width: 260px"
-/>
-</td>
-</tr>
-<tr>
-<td>
-<label for="Phone"><b>Phone *</b></label
-><br />
-<input
-name="Phone"
-type="text"
-maxlength="50"
-style="width: 260px"
-/>
-
-</td>
-<td>
-<label for="Fax"><b>Fax</b></label
-><br />
-<input name="Fax" type="text" maxlength="50" style="width: 260px" />
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<label for="Relocate"><b>Is relocation necessary?</b></label
-><br />
-<input name="Relocate" type="radio" value="Yes" checked="checked" />
-Yes <input name="Relocate" type="radio" value="No" /> No
-<input name="Relocate" type="radio" value="NotSure" /> Not sure
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<label for="Organization"><b>Eligiblity Score </b></label
-><br />
-<input
-name="Organization"
-type="text"
-maxlength="100"
-style="width: 535px"
-/>
-</td>
-</tr>
-<tr>
-<td colspan="2">
-<label for="Reference"
-><b>Other Notes</b></label
-><br />
-<textarea
-name="Reference"
-rows="7"
-cols="40"
-style="width: 535px"
-></textarea>
-</td>
-</tr>
-
-<tr>
-<td colspan="2" style="text-align: center;">
-<!-- <div style="float: right">
+        <tr>
+          <td colspan="2" style="text-align: center;">
+            <!-- <div style="float: right">
 <a
 href="https://www.100forms.com"
 id="lnk100"
@@ -211,14 +205,10 @@ title="form to email"
 src="https://www.100forms.com/js/FORMKEY:5NGFTBLJ687L/SEND:my@email.com"
 type="text/javascript"
 ></script> -->
-<input name="skip_submit" type="submit" value="Send Application" />
-</td>
-</tr>
-</table>
-</form>
-
- 
-
-
-</body>
+            <input name="skip_submit" type="submit" value="Send Application" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
 </html>

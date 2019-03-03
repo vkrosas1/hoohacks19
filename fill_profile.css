@@ -6,19 +6,20 @@ p {
 }
 h1 {
   font-weight: bold;
-}
-.myButton {
-  font-family: "Roboto", sans-serif;
-  background-color: green;
-  border: none;
-  color: white;
   text-align: center;
-  padding: 15px 32px;
-  margin-left: 250px;
-  margin-top: 200px;
-  text-decoration: none;
+}
+.main_heading {
+  align-items: center;
+  align-content: center;
+}
+.main_heading_text {
+  text-align: center;
+
+  font-family: "Anton", sans-serif;
+  font-size: 56px;
+}
+
+.form_stuff {
+  text-align: center;
   display: inline-block;
-  font-size: 30px;
-  width: 250px;
-  vertical-align: bottom;
 }

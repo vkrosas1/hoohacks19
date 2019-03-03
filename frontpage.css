@@ -1,111 +1,111 @@
 body {
-    background: lightslategray;
-    background-image: url("https://i.pinimg.com/736x/f3/a0/67/f3a06799636e7fbf03ef08b28b321d04.jpg?b=t");
-    font-family: 'Anton', sans-serif;
-    background-repeat: no-repeat;
-    background-size:cover;
-    }
-    p {
+  background: lightslategray;
+  background-image: url("https://i.pinimg.com/736x/f3/a0/67/f3a06799636e7fbf03ef08b28b321d04.jpg?b=t");
+  font-family: "Anton", sans-serif;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-    color: black; 
-    font-weight: bold;
-    left: 0;
-    position: absolute;
-    top: 50%;
-    width: 100%;
-    border: 2px;  
-    text-align: center;
-    margin-top:5px;  
-    margin-bottom:5px;  
-    margin-left:20px;  
-    margin-right:20px;  
-    padding: 1px;  
-    font-size: 25px;
-    font-family: 'Courgette', cursive;
-    }
-    h1 {
-    font-weight: bold;
-    text-align: center;
-    font-family: 'Playfair Display SC', serif;
-    margin-top: 120px;
-    margin-right: 10px;
-    font-size: 150px;
-    text-align: center;
-    }
-    h1, p, button {
+p {
+  color: black;
+  font-weight: bold;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  border: 2px;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 1px;
+  font-size: 25px;
+  font-family: "Courgette", cursive;
+}
+h1 {
+  font-weight: bold;
+  text-align: center;
+  font-family: "Playfair Display SC", serif;
+  margin-top: 120px;
+  margin-right: 10px;
+  font-size: 150px;
+  text-align: center;
+}
+h1,
+p,
+button {
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
+}
 
-        animation: fadein 5s;
-        -moz-animation: fadein 5s; /* Firefox */
-        -webkit-animation: fadein 5s; /* Safari and Chrome */
-        -o-animation: fadein 5s; /* Opera */
-        }
-        
-        @keyframes fadein {
-        from {
-        opacity: 0;
-        }
-        to {
-        opacity: 1;
-        }
-        }
-        @-moz-keyframes fadein {
-        /* Firefox */
-        from {
-        opacity: 0;
-        }
-        to {
-        opacity: 1;
-        }
-        }
-        @-webkit-keyframes fadein {
-        /* Safari and Chrome */
-        from {
-        opacity: 0;
-        }
-        to {
-        opacity: 1;
-        }
-        }
-        @-o-keyframes fadein {
-        /* Opera */
-        from {
-        opacity: 0;
-        }
-        to {
-        opacity: 1;
-        }
-        }
-
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 
 button {
-    background-color: lightsalmon;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    margin-left: 100px;
-    margin-top: 400px;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 30px;
-    width: 250px;
-    vertical-align: bottom;
+  background-color: lightsalmon;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  margin-left: 100px;
+  margin-top: 400px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 250px;
+  vertical-align: bottom;
 }
 
 .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-    }
-    
-    @media only screen and (max-width: 700px){
-    .responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
     width: 49.99999%;
     margin: 6px 0;
-    }
-    }
-    
-    @media only screen and (max-width: 500px){
-    .responsive {
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
     width: 100%;
-    }
-    }
+  }
+}
