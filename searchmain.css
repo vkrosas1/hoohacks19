@@ -1,0 +1,96 @@
+body {
+ background-image: url("https://mymodernmet.com/wp/wp-content/uploads/archive/J-WwyVe7B6zjhdFJ00MR_1082106464.jpeg");
+ font-family: 'Anton', sans-serif;
+
+ background-repeat: no-repeat;
+ background-size:cover;
+ 
+}
+
+.title {
+	font-size: 50px;
+
+}
+
+img {
+	size: 5px;
+}
+
+.btn5 {
+	position:absolute;
+	top:350px;
+	left:202px;
+	height:120px;
+	width:120px;
+	-webkit-transition-duration:0.4s;
+	transition-duration:0.4s;
+	border-radius: 50%;
+	border: 2px solid black;
+	background-color: lightgray;
+	text-align: center;
+	color:black;
+	display:inline-block;
+	font-size: 20px;
+	-moz-animation: fadein 5s; /* Firefox */
+-webkit-animation: fadein 5s; /* Safari and Chrome */
+-o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-moz-keyframes fadein {
+/* Firefox */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-webkit-keyframes fadein {
+/* Safari and Chrome */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-o-keyframes fadein {
+/* Opera */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+.btn2:hover {
+	background-color: white;
+	color:black;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+	display: grid;
+	grid-template-columns:  (200px 200px 200px);
+  	grid-auto-rows:100px;
+}
+
+.box1 {
+	grid-column-start:1;
+	grid-column-end:4;
+	grid-row-start:1;
+	grid-row-end:3;
+}
+
+.box2 {
+	grid-column-start:1;
+	grid-row-start:3;
+	grid-row-end:5;
+}
