@@ -1,0 +1,147 @@
+body {
+  background: lightblue;
+}
+p {
+  color: black;
+}
+h1 {
+  font-weight: bold;
+}
+
+.main_question {
+  margin-top: 40px;
+  font-size: 72px;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  animation: fadein 5s;
+  -moz-animation: fadein 5s; /* Firefox */
+  -webkit-animation: fadein 5s; /* Safari and Chrome */
+  -o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadein {
+  /* Firefox */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadein {
+  /* Safari and Chrome */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-o-keyframes fadein {
+  /* Opera */
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.divider {
+  width: 5px;
+  height: auto;
+  display: inline-block;
+}
+/* .my_buttons {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 100px;
+}
+
+button {
+  display: inline-block;
+  margin-left: 50px;
+  margin-right: 100px;
+}
+
+.two_options {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+} */
+
+.myButton {
+  font-family: "Roboto", sans-serif;
+  background-color: green;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 15px 32px;
+  margin-left: 250px;
+  margin-top: 200px;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  width: 250px;
+  vertical-align: bottom;
+}
+
+/* .myButton {
+  background-color: #44c767;
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px; */
+/* display: inline-block; */
+/* cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+  text-shadow: 1px 0px 0px #2f6627;
+
+  width: 25%;
+  height: 40px;
+  margin-left: 300px;
+  margin-right: 300px;
+  border: 1px solid black; */
+/* display: flex; */
+/* align-items: center;
+  justify-content: center;
+}
+.myButton:hover {
+  background-color: #5cbf2a;
+}
+.myButton:active {
+  position: relative;
+  top: 1px;
+}
+
+.myButtons {
+  display: inline-block;
+}
+
+#outer {
+  width: 100%;
+  text-align: center;
+}
+.inner {
+  display: inline-block;
+  width: 25%;
+  height: 70px;
+} */
