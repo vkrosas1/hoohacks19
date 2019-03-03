@@ -1,9 +1,14 @@
 body {
     background: lightslategray;
+    background-image: url("https://i.pinimg.com/736x/f3/a0/67/f3a06799636e7fbf03ef08b28b321d04.jpg?b=t");
+    font-family: 'Anton', sans-serif;
+    background-repeat: no-repeat;
+    background-size:cover;
     }
     p {
 
-    color: black;
+    color: black; 
+    font-weight: bold;
     left: 0;
     position: absolute;
     top: 50%;
@@ -15,18 +20,16 @@ body {
     margin-left:20px;  
     margin-right:20px;  
     padding: 1px;  
-    font-size: 20px;
-    font-family: 'Muli', sans-serif;
-
+    font-size: 25px;
+    font-family: 'Courgette', cursive;
     }
     h1 {
     font-weight: bold;
     text-align: center;
-    font-size: 100px;
-    font-family: 'Muli', sans-serif;
-    margin-top: 200px;
+    font-family: 'Playfair Display SC', serif;
+    margin-top: 120px;
     margin-right: 10px;
-    font-size: 72px;
+    font-size: 150px;
     text-align: center;
     }
     h1, p, button {
@@ -80,10 +83,29 @@ button {
     color: white;
     padding: 15px 32px;
     margin-left: 100px;
-    margin-top: 200px;
+    margin-top: 300px;
     text-decoration: none;
     display: inline-block;
     font-size: 30px;
     width: 250px;
     vertical-align: bottom;
 }
+
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+    }
+    
+    @media only screen and (max-width: 700px){
+    .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+    }
+    }
+    
+    @media only screen and (max-width: 500px){
+    .responsive {
+    width: 100%;
+    }
+    }
