@@ -11,7 +11,7 @@ body {
 
 .btn2 {
 	position:absolute;
-	top:700px;
+	top:550px;
 	left:202px;
 	height:120px;
 	width:120px;
@@ -24,6 +24,44 @@ body {
 	color:black;
 	display:inline-block;
 	font-size: 20px;
+	-moz-animation: fadein 5s; /* Firefox */
+-webkit-animation: fadein 5s; /* Safari and Chrome */
+-o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-moz-keyframes fadein {
+/* Firefox */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-webkit-keyframes fadein {
+/* Safari and Chrome */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-o-keyframes fadein {
+/* Opera */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
 }
 .btn2:hover {
 	background-color: white;
@@ -31,7 +69,7 @@ body {
 }
 .btn3 {
 	position:absolute;
-	top:700px;
+	top:550px;
 	left:400px;
 	height:120px;
 	width:120px;
@@ -44,6 +82,44 @@ body {
 	color:black;
 	display:inline-block;
 	font-size: 20px;
+	-moz-animation: fadein 5s; /* Firefox */
+-webkit-animation: fadein 5s; /* Safari and Chrome */
+-o-animation: fadein 5s; /* Opera */
+}
+@keyframes fadein {
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-moz-keyframes fadein {
+/* Firefox */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-webkit-keyframes fadein {
+/* Safari and Chrome */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
+}
+@-o-keyframes fadein {
+/* Opera */
+from {
+opacity: 0;
+}
+to {
+opacity: 1;
+}
 }
 .btn3:hover {
 	background-color: white;
